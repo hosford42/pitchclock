@@ -16,6 +16,7 @@ __author__ = 'Aaron Hosford'
 __author_email__ = 'hosford42@gmail.com'
 __version__ = '0.0'
 __license__ = 'MIT'
+__url__ = ''
 
 
 Ratio = Union[int, float, Fraction]
@@ -580,7 +581,7 @@ class ToneClock:
 
     def save(self, path: str) -> None:
         """Create a surface, draw the clock, and save it to the requested path."""
-        surface = gizeh.Surface(*self._style.dimensions, bg_color=(1, 1, 1))
+        surface = gizeh.Surface(*self._style.dimensions, bg_color=WHITE)
         self.draw(surface)
         surface.write_to_png(path)
 
