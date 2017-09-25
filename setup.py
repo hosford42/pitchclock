@@ -14,5 +14,6 @@ setup(
     author=pitchclock.__author__,
     author_email=pitchclock.__author_email__,
     description='Tone clock visualizations',
-    long_description=long_description
+    long_description=long_description,
+    install_requires=['gizeh']
 )
