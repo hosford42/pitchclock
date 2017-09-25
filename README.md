@@ -1,4 +1,4 @@
-tchClock Logo](images/pitchclock.png)
+![PitchClock Logo](images/pitchclock.png)
 
 # PitchClock
 
