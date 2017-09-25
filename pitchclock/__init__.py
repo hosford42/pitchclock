@@ -14,9 +14,9 @@ import gizeh
 
 __author__ = 'Aaron Hosford'
 __author_email__ = 'hosford42@gmail.com'
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 __license__ = 'MIT'
-__url__ = 'https://hosford42.github.io/pitchclock'
+__url__ = 'https://github.com/hosford42/pitchclock'
 
 
 Ratio = Union[int, float, Fraction]
