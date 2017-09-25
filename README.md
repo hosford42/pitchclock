@@ -1,4 +1,4 @@
-![PitchClock Logo](images/pitchclock.png)
+![PitchClock Logo](https://github.com/hosford42/pitchclock/raw/master/images/pitchclock.png)
 
 # PitchClock
 
@@ -71,7 +71,7 @@ clock.save('images/major_comparison.png')
 
 And here's the image it produces:
 
-![Major Scale Comparison](images/major_comparison.png)
+![Major Scale Comparison](https://github.com/hosford42/pitchclock/raw/master/images/major_comparison.png)
 
 From this graph, it becomes immediately apparent that the intervals in 
 the syntonic scale that are most poorly approximated by the equal

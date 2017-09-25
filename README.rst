@@ -1,4 +1,4 @@
-.. figure:: images/pitchclock.png
+.. figure:: https://github.com/hosford42/pitchclock/raw/master/images/pitchclock.png
    :alt: PitchClock Logo
 
    PitchClock Logo
@@ -75,7 +75,7 @@ mark. Here's the code to produce the graph:
 
 And here's the image it produces:
 
-.. figure:: images/major_comparison.png
+.. figure:: https://github.com/hosford42/pitchclock/raw/master/images/major_comparison.png
    :alt: Major Scale Comparison
 
    Major Scale Comparison
