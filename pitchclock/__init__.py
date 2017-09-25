@@ -16,7 +16,7 @@ __author__ = 'Aaron Hosford'
 __author_email__ = 'hosford42@gmail.com'
 __version__ = '0.0'
 __license__ = 'MIT'
-__url__ = ''
+__url__ = 'https://hosford42.github.io/pitchclock'
 
 
 Ratio = Union[int, float, Fraction]
@@ -299,7 +299,7 @@ class ToneClockStyle:
         return (((rotation + half) // full) * full) % TAU
 
 
-class PitchMark:
+class PitchMark(object):
     """Abstract base class for pitch markings (dots, angles, and labels)."""
 
     def __init__(self, style: ToneClockStyle, pitch: RelativePitch, quantize: bool):
@@ -352,7 +352,7 @@ class PitchDot(PitchMark):
     """Represents a pitch as a dot on the tone clock."""
 
     def __init__(self, style: ToneClockStyle, pitch: RelativePitch, filled: bool, quantize: bool = True):
-        super().__init__(style, pitch, quantize)
+        super(PitchDot, self).__init__(style, pitch, quantize)
         self._filled = filled
 
     @property
@@ -373,7 +373,7 @@ class PitchAngle(PitchMark):
     """Represents a pitch as an angle marking on the tone clock."""
 
     def __init__(self, style: ToneClockStyle, pitch: RelativePitch, quantize: bool = True):
-        super().__init__(style, pitch, quantize)
+        super(PitchAngle, self).__init__(style, pitch, quantize)
 
     def draw(self, surface: gizeh.Surface) -> None:
         """Draw the pitch's representative angle marking."""
@@ -388,7 +388,7 @@ class PitchLine(PitchMark):
     """Represents a pitch as a line on the tone clock."""
 
     def __init__(self, style: ToneClockStyle, pitch: RelativePitch, quantize: bool = True):
-        super().__init__(style, pitch, quantize)
+        super(PitchLine, self).__init__(style, pitch, quantize)
 
     def draw(self, surface: gizeh.Surface) -> None:
         """Draw the line on the tone clock."""
@@ -402,7 +402,7 @@ class PitchLabel(PitchMark):
     """Labels a pitch on the tone clock."""
 
     def __init__(self, style: ToneClockStyle, pitch: RelativePitch, label: str, quantize: bool = False):
-        super().__init__(style, pitch, quantize)
+        super(PitchLabel, self).__init__(style, pitch, quantize)
         self._label = str(label)
 
     def __add__(self, other: 'PitchLabel') -> 'PitchLabel':
