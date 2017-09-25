@@ -10,7 +10,31 @@ classical and
 [Just Intonation](https://en.wikipedia.org/wiki/Just_intonation)
 theory as well.
 
-## Example
+
+## License
+
+PitchClock is distributed under the permissive 
+[MIT license](https://github.com/hosford42/pitchclock/blob/master/LICENSE.txt).
+
+
+## Links:
+
+* Distribution: [https://pypi.python.org/pypi/pitchclock](https://pypi.python.org/pypi/pitchclock)
+* Source: [https://github.com/hosford42/pitchclock](https://github.com/hosford42/pitchclock)
+
+
+# Installation
+
+The latest stable distribution of PitchClock can be installed with pip:
+
+    pip install pitchclock
+
+Or, if you prefer the current development version:
+
+    pip install git+https://github.com/hosford42/pitchclock.git
+
+
+## Example Usage
 
 As an example, let's compare the equal temperament major scale, 
 versus the just intonation scale it approximates, known as the
